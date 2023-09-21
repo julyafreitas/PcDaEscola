@@ -1,0 +1,51 @@
+programa
+{
+	funcao inicio()
+	{
+		
+		real valorfinal=0.0
+		
+		inteiro opcoes
+		escreva("Lanchonete da julya freitas\n\n")
+		faca
+		{
+			
+			escreva("cardapio\n")
+			
+			escreva("  1 -> X-salada 15.00 \n")
+			escreva("  2 -> X-bacon 13.00 \n")
+			escreva("  3 -> X-Egg 10.00\n")
+			escreva("  4 -> refrigerante 9.00 \n")
+			escreva("  5 -> finalizar pedido\n")
+			escreva("Digite o item que voce deseja: ")
+		
+			
+			leia(opcoes)
+			
+
+			escolha (opcoes)
+			{
+			
+				caso 1: 
+			 	valorfinal=valorfinal+15.00
+			 	pare
+			 	
+			 	caso 2: 
+			 	valorfinal=valorfinal+13.00
+			 	pare
+			 	
+			 	caso 3: 
+			 	valorfinal=valorfinal+10.00
+			 	pare
+			 		caso 4: 
+			 	valorfinal=valorfinal+9.00
+			 	pare
+			 	
+			 	caso 5: 
+			 	escreva("Pedido finalizado, seu pedido ficou com valor de : ", valorfinal)
+			 	pare
+			 	caso contrario:
+			 		escreva("Voce informou um numero errado\n\n")
+			}			 
+		}
+		enquanto(opcoes != 5)
